@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eshwari Trip Organisers | Turning Journeys into Memories</title>
+
+<meta name="description" content="Eshwari Trip Organisers – Professional travel planners for hill station trips, beach holidays, college trips, family vacations and pilgrimage tours.">
+<meta name="keywords" content="Trip Organisers, Travel Agency, Karnataka Tours, Hill Station Trips, Beach Holidays">
+<meta name="author" content="Eshwari Trip Organisers">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+<nav class="navbar">
+
+  <div class="logo">
+    <img src="assets/images/Logo.png" alt="Eshwari Trip Organisers Logo">
+  </div>
+
+  <!-- NAV LINKS -->
+  <div class="nav-links" id="navLinks">
+    <i class="fas fa-times" onclick="hideMenu()"></i>
+    <ul>
+      <li><a href="#home" onclick="hideMenu()">Home</a></li>
+      <li><a href="#about" onclick="hideMenu()">About</a></li>
+      <li><a href="#trips" onclick="hideMenu()">Trips</a></li>
+      <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
+      <li><a href="#videos" onclick="hideMenu()">Videos</a></li>
+      <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- WHATSAPP (AUTO MESSAGE) -->
+  <a href="javascript:void(0)" class="btn" onclick="openWhatsAppBooking()">
+    <i class="fab fa-whatsapp"></i> WhatsApp Us
+  </a>
+
+  <!-- INSTAGRAM -->
+  <a href="https://www.instagram.com/eshwari_trip_organizers"
+     target="_blank"
+     class="social-icon instagram">
+     <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- HAMBURGER -->
+  <i class="fas fa-bars" onclick="showMenu()"></i>
+
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Eshwari Trip Organisers</h1>
+    <p>Turning Journeys into Memories</p>
+
+    <div class="hero-btn-wrapper">
+      <a href="#trips" class="btn">Explore Trips</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container" data-aos="fade-up">
+<h2>About Us</h2>
+<p>
+Eshwari Trip Organisers is a trusted travel company offering customized, affordable, and safe travel experiences across India.
+</p>
+</div>
+</section>
+
+<!-- TRIPS -->
+<section id="trips" class="section bg-light">
+<div class="container">
+<h2>Our Trips</h2>
+
+<div class="trip-cards">
+  <div class="trip-card"><img src="assets/images/gallery/hill.webp"><h3>Hill Station Trips</h3><p>Cool climate and scenic hill destinations.</p></div>
+  <div class="trip-card"><img src="assets/images/gallery/beach.jpg"><h3>Beach Holidays</h3><p>Relaxing beach vacations with comfort.</p></div>
+  <div class="trip-card"><img src="assets/images/gallery/clg.jpg"><h3>College Trips</h3><p>Budget-friendly and fun group trips.</p></div>
+  <div class="trip-card"><img src="assets/images/gallery/img2.jpg"><h3>Family Vacations</h3><p>Safe and joyful family tours.</p></div>
+  <div class="trip-card"><img src="assets/images/gallery/temple.jpg"><h3>Pilgrimage Tours</h3><p>Spiritual journeys with complete planning.</p></div>
+  <div class="trip-card"><img src="assets/images/gallery/dandeli.webp"><h3>Adventure Trips</h3><p>Fuel your soul with adventure.</p></div>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+<div class="container">
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+  <img src="assets/images/gallery/dandeli.webp" onclick="openLightbox(this.src)">
+  <img src="assets/images/gallery/img2.jpg" onclick="openLightbox(this.src)">
+  <img src="assets/images/gallery/temple.jpg" onclick="openLightbox(this.src)">
+</div>
+</div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- VIDEOS -->
+<section id="videos" class="section bg-light">
+<div class="container">
+<h2>Our Videos</h2>
+
+<div class="video-grid">
+  <div class="video-item">
+    <video controls>
+      <source src="assets/videos/Trip-1.mp4" type="video/mp4">
+    </video>
+    <p>Trip Highlights</p>
+  </div>
+
+  <div class="video-item">
+    <video controls>
+      <source src="assets/videos/Trip-2.mp4" type="video/mp4">
+    </video>
+    <p>College Trip Fun</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<div class="container">
+<h2>Testimonials</h2>
+
+<div class="testimonial-slider">
+  <div class="testimonial active">
+    <p>"Perfect planning and great service!"</p>
+    <h4>- Gowrish Kumar</h4>
+  </div>
+  <div class="testimonial">
+    <p>"Affordable and well organized trips."</p>
+    <h4>- Anitha S</h4>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-modern">
+  <div class="contact-wrapper">
+
+    <div class="contact-left">
+      <h2>Let’s Plan Your Next Trip </h2>
+      <p>Tell us where you want to go. We’ll take care of everything else.</p>
+
+      <div class="contact-details">
+        <div><i class="fas fa-phone"></i><span>+91 90192 68071</span></div>
+        <div><i class="fas fa-envelope"></i><span>eshwaritriporganisers@gmail.com</span></div>
+        <div><i class="fas fa-location-dot"></i><span>Tumkur, Karnataka</span></div>
+      </div>
+
+      <div class="contact-actions">
+        <a href="https://wa.me/919019268071" target="_blank" class="btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="https://www.instagram.com/eshwari_trip_organizers" target="_blank" class="insta-btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <h3>Share your valuable feedback </h3>
+
+      <form name="tripForm" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="tripForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Tell us about your trip..." required></textarea>
+        <button type="submit" class="btn submit-btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© <span id="year"></span> Eshwari Trip Organisers</p>
+  <a href="https://www.instagram.com/eshwari_trip_organizers" target="_blank">
+    <i class="fab fa-instagram"></i> @eshwari_trip_organizers
+  </a>
+</footer>
+
+<a class="back-to-top" href="#"><i class="fas fa-arrow-up"></i></a>
+
+<!-- SUCCESS POPUP -->
+<div id="successPopup" class="success-popup">
+  <div class="popup-box">
+    <i class="fas fa-circle-check"></i>
+    <h3>Message Sent Successfully!</h3>
+    <p>We’ll get back to you shortly.</p>
+    <button onclick="closePopup()">Okay</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
